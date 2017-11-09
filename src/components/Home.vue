@@ -21,8 +21,10 @@
 
 <script>
 export default {
-  // firebase () {
-  //   cats: this.$db.ref('cats')
+  // data () {
+  //   return {
+  //     latestCats: []
+  //   }
   // },
   firebase () {
     return {
@@ -32,8 +34,15 @@ export default {
   computed: {
     latestCats: function () {
       // this.cats.reverse()
-      this.$firebaseRefs.
+      console.log(this.cats)
+      // this.$firebaseRefs.
     }
+    // checkCats: function () {
+    //   // this.$firebaseRefs.cats.push({
+    //   //
+    //   // })
+    //   console.log(this.cats)
+    // }
   }
 }
 </script>
